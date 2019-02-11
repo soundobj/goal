@@ -11,7 +11,7 @@ module.exports =
 	output:
 	{
 		path: path.resolve(__dirname, 'dist'),
-		filename: '[name].[chunkhash].js',
+		filename: 'main.js',
 	},
 	target: 'web',
     module:
@@ -43,7 +43,7 @@ module.exports =
     [
     	new CleanWebpackPlugin('dist', {}),
         new MiniCssExtractPlugin({
-            filename: 'style.[contenthash].css',
+            filename: 'style.css',
         }),
         new HtmlWebpackPlugin({
             inject: false,

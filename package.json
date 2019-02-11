@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "hot": "webpack-dev-server --mode development --hot --config ./hot.webpack.config.js",
     "dev": "webpack --mode development",
     "build": "webpack --mode production"
   },
@@ -32,10 +33,12 @@
     "postcss-loader": "^3.0.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
+    "react-hot-loader": "^4.6.5",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.29.3",
     "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14",
     "webpack-md5-hash": "^0.0.6",
     "webpack-node-externals": "^1.7.2"
   },
