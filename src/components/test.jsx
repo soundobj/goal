@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-
 class Test extends Component
 {
 	constructor()
@@ -9,7 +8,9 @@ class Test extends Component
 	}
 	render()
 	{
-		return (<h1>Hello, world</h1>);
+		return (
+			<h1>Hello, world</h1>
+		);
 	}
 }
 
