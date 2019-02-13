@@ -3,7 +3,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-
+const globImporter = require('node-sass-glob-importer');
 module.exports =
 {
 	entry: { main: './src/index.js' },
@@ -39,7 +39,13 @@ module.exports =
                     MiniCssExtractPlugin.loader,
                     'css-loader',
                     'postcss-loader',
-                    'sass-loader',
+                    // 'sass-loader',
+					{
+						loader: 'sass-loader',
+						options: {
+							importer: globImporter()
+						}
+					}
                 ]
             },
             {

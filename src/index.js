@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import ReactDOM from "react-dom";
 import Icon from "./components/Icon.jsx";
 import Test from "./components/Test.jsx";
-import  "./scss/main.scss";
+import  "./main.scss";
 console.log("hello, world");
 const App = () => {
 	return (
