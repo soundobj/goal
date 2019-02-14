@@ -32,7 +32,7 @@ module.exports =
         		enforce: "pre"
 			},
             {
-                test: /\.scss$/,
+                test: /\.(css|scss)$/,
                 use:
                 [
                     'style-loader',

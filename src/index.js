@@ -1,8 +1,10 @@
 import React, {Component} from "react";
 import ReactDOM from "react-dom";
+import "normalize.css";
+import "./main.scss";
 import Icon from "./components/Icon.jsx";
 import Test from "./components/Test.jsx";
-import  "./main.scss";
+
 console.log("hello, world");
 const App = () => {
 	return (
