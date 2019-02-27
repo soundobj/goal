@@ -5,7 +5,7 @@ import "./main.scss";
 import Icon from "./components/Icon.jsx";
 import Test from "./components/Test.jsx";
 
-console.log("hello, world");
+console.log("hello, world", FOO, TWO);
 const App = () => {
 	return (
 		<div className="wrapper">
